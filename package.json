@@ -1,0 +1,16 @@
+{
+  "name": "treehole-netlify",
+  "version": "3.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Treehole - Netlify Functions + Netlify Blobs deployment bundle",
+  "scripts": {
+    "check": "node --check netlify/functions/api/server-core.cjs && node --check netlify/functions/api/index.mjs && node --check public/app.js && node --check public/pet3d.js"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
